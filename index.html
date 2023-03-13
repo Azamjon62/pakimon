@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocemons</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="./index.html">
+                    <img src="./images/logo.svg" alt="Logo" class="header__logo">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="box">
+            <div class="container">
+                <div class="box__inner">
+                    <form class="box__form" action="#">
+                        <select class="box__select" name="select">
+                            <option style="visibility: hidden;">Candy</option>
+                            <option value="all">All</option>
+                        </select>
+                        <label>
+                            <input class="box__search" type="search" placeholder="Search">
+                        </label>
+                        <select class="box__select" name="select">
+                            <option value="Aa-Zz">Aa-Zz</option>
+                            <option value="Aa-Zz">Aa-Zz</option>
+                            <option value="Aa-Zz">Aa-Zz</option>
+                        </select>
+                        <button class="box__btn" type="submit">Button</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="pacemons">
+            <div class="container">
+                <div class="pacemons__inner">
+                    <ul class="pacemons__ul">
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./scripts/pocemon.js"></script>
+    <script src="./scripts/app.js"></script>
+</body>
+</html>

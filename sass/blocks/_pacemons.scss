@@ -1,0 +1,56 @@
+.pacemons {
+    width: 100%;
+    padding: 100px 0 334px;
+    &__ul {
+        @extend %list-unstyled;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(250px, 307px));
+        gap: 30px;
+    }
+    &__item {
+        max-width: 307px;
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        border-radius: 20px;
+    }
+    &__img {
+        padding: 30px 75px 70px;
+        @include flex(row, center, center);
+    }
+    &__info {
+        padding: 20px 30px 40px;
+        border-top: 2px solid #000000;
+    }
+    &__title {
+        position: relative;
+        @include font(normal, 700, 24px, 28px);
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            background-image: url(../../images/heart.svg);
+        }
+    }
+    &__text {
+        @include font(normal, 500, 20px, 23px);
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        margin: 5px 0 25px;
+    }
+    &__weight {
+        @include font(normal, 700, 24px, 28px);
+        color: #000000;
+        margin-right: 30px;
+    }
+    &__age {
+        @include font(normal, 700, 24px, 28px);
+        color: #000000;
+    }
+}
