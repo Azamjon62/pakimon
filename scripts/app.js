@@ -1,7 +1,7 @@
 "use strick";
 
 
-let elList = document.querySelector(".pacemons__ul"),
+let elList = document.querySelector(".pakimons__ul"),
     elForm = document.querySelector(".box__form"),
     elSelect = document.querySelector(".box__select"),
     elSearch = document.querySelector(".box__search");
@@ -13,18 +13,19 @@ function renderUi(arr) {
     for (let i of arr) {
 
         let elItem = document.createElement('li');
-        elItem.setAttribute("class", "pacemons__item");
+        elItem.setAttribute("class", "pakimons__item");
 
         elItem.innerHTML = `
     
-        <div class="pacemons__img">
+        <div class="pakimons__img">
             <img src="${i.img}" alt="${i.name}">
         </div>
-        <div class="pacemons__info">
-            <h3 class="pacemons__title">${i.name}</h3>
-            <p class="pacemons__text">${i.type}</p>
-            <span class="pacemons__weight">${i.weight}</span>
-            <span class="pacemons__age">Age: ${i.avg_spawns}</span>
+
+        <div class="pakimons__info">
+            <h3 class="pakimons__title">${i.name}</h3>
+            <p class="pakimons__text">${i.type}</p>
+            <span class="pakimons__weight">${i.weight}</span>
+            <span class="pakimons__age">Age: ${i.avg_spawns}</span>
         </div>
     `
 
@@ -74,13 +75,13 @@ elSearch.addEventListener("keyup", (evt) => {
     if (elSearch.value != " ") {
         value = evt.target.value;
 
-        let nameArr = pokemons.filter(item => {
+        let nameVal = pokemons.filter(item => {
             return item.name.includes(value);
         })
 
         elList.innerHTML = '';
 
-        renderUi(nameArr);
+        renderUi(nameVal);
     } else {
         renderUi(pokemons);
     }

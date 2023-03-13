@@ -372,7 +372,7 @@ img {
   flex-grow: 1;
 }
 
-.pacemons__ul {
+.pakimons__ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
@@ -412,40 +412,40 @@ img {
   width: 50px;
   height: 50px;
   display: inline-block;
-  background-image: url(../../images/heart1.svg);
+  background-image: url(../../images/yurak1.svg);
 }
 .header__logo {
   position: relative;
   margin: 50px auto 70px;
 }
 
-.pacemons {
+.pakimons {
   width: 100%;
   padding: 100px 0 334px;
 }
-.pacemons__ul {
+.pakimons__ul {
   display: grid;
   grid-template-columns: repeat(4, minmax(250px, 307px));
   gap: 30px;
 }
-.pacemons__item {
+.pakimons__item {
   max-width: 307px;
   background: #FFFFFF;
   border: 2px solid #000000;
   border-radius: 20px;
 }
-.pacemons__img {
+.pakimons__img {
   padding: 30px 75px 70px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.pacemons__info {
+.pakimons__info {
   padding: 20px 30px 40px;
   border-top: 2px solid #000000;
 }
-.pacemons__title {
+.pakimons__title {
   position: relative;
   font-style: normal;
   font-weight: 700;
@@ -455,16 +455,17 @@ img {
   margin: 0;
   padding: 0;
 }
-.pacemons__title::after {
+.pakimons__title::after {
   content: "";
   position: absolute;
   right: 0;
   width: 30px;
   height: 30px;
   display: inline-block;
-  background-image: url(../../images/heart.svg);
+  background-image: url(../../images/yurak.svg);
+  cursor: pointer;
 }
-.pacemons__text {
+.pakimons__text {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -474,7 +475,7 @@ img {
   padding: 0;
   margin: 5px 0 25px;
 }
-.pacemons__weight {
+.pakimons__weight {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -482,7 +483,7 @@ img {
   color: #000000;
   margin-right: 30px;
 }
-.pacemons__age {
+.pakimons__age {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;

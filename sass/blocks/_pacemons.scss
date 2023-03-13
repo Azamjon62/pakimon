@@ -1,4 +1,4 @@
-.pacemons {
+.pakimons {
     width: 100%;
     padding: 100px 0 334px;
     &__ul {
@@ -34,7 +34,8 @@
             width: 30px;
             height: 30px;
             display: inline-block;
-            background-image: url(../../images/heart.svg);
+            background-image: url(../../images/yurak.svg);
+            cursor: pointer;
         }
     }
     &__text {
